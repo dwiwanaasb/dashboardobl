@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+    background-color: $bg;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+select {
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 10px;
+    outline: none;
+    cursor: pointer;
+    width: auto;
+}
+
+input[type='date'] {
+    cursor: pointer;
+}
+
+button {
+    all: unset;
+    transition: all 0.2s;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 16px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+    filter: brightness(110%);
+}
+
+input[type='text'],
+input[type='password'],
+input[type='number'],
+input[type='date'] {
+    all: unset;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 10px 14px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+input[type='date']:focus,
+textarea:focus,
+select:focus {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: $primary;
+}
+
+::placeholder {
+    color: $gray-600;
+}

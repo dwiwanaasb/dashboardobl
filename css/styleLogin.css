@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+  background-color: #f6f6ff;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+select {
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 10px;
+  outline: none;
+  cursor: pointer;
+  width: auto;
+}
+
+input[type='date'] {
+  cursor: pointer;
+}
+
+button {
+  all: unset;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 30px;
+  padding: 16px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+input[type='text'],
+input[type='password'],
+input[type='number'],
+input[type='date'] {
+  all: unset;
+  background-color: white;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 10px 14px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+input[type='date']:focus,
+textarea:focus,
+select:focus {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: #0d6efd;
+}
+
+::-webkit-input-placeholder {
+  color: #6c757d;
+}
+
+:-ms-input-placeholder {
+  color: #6c757d;
+}
+
+::-ms-input-placeholder {
+  color: #6c757d;
+}
+
+::placeholder {
+  color: #6c757d;
+}
+
+.area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.area .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0;
+  -webkit-box-shadow: 1px 3px 40px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 3px 40px 0px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  border-radius: 24px;
+  padding: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+
+.area .container h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.area .container label.note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.area .container label.note a {
+  margin-left: 5px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: red;
+}
+
+.area .container form {
+  width: 100%;
+}
+
+.area .container form .form-input {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.area .container form .form-input label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.area .container form .form-input i#togglePassword,
+.area .container form .form-input i#toggleCPassword {
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  color: #858585;
+  top: 45px;
+  right: 20px;
+}
+
+.area .container form .form-input input {
+  width: 100%;
+  padding: 0;
+  height: 42px;
+  text-indent: 20px;
+  background-color: #e9ecef;
+}
+
+.area .container form .form-input input:focus {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: #0d6efd;
+}
+
+.area .container form .form-input select {
+  background-color: #e9ecef;
+}
+
+.area .container form .form-cookie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.area .container form .form-cookie input {
+  border: 1px solid #000;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.area .container form .form-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.area .container form .form-button button {
+  all: unset;
+  border-radius: 24px;
+  background-color: #0d6efd;
+  color: white;
+  width: 100%;
+  padding: 14px 0;
+  text-align: center;
+  font-weight: 700;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  margin: 10px 0;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.area .container form .form-button button:hover {
+  -webkit-filter: brightness(125%);
+          filter: brightness(125%);
+}
+
+.area .container form .form-button a {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+}
+
+.area .container form .form-button a.home {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+  .area .container {
+    width: 80%;
+    padding: 50px 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .area .container {
+    width: 90% !important;
+  }
+}
+/*# sourceMappingURL=styleLogin.css.map */

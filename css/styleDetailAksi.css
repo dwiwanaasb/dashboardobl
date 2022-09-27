@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+  background-color: #f6f6ff;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+select {
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 10px;
+  outline: none;
+  cursor: pointer;
+  width: auto;
+}
+
+input[type='date'] {
+  cursor: pointer;
+}
+
+button {
+  all: unset;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 30px;
+  padding: 16px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+input[type='text'],
+input[type='password'],
+input[type='number'],
+input[type='date'] {
+  all: unset;
+  background-color: white;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 10px 14px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+input[type='date']:focus,
+textarea:focus,
+select:focus {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: #0d6efd;
+}
+
+::-webkit-input-placeholder {
+  color: #6c757d;
+}
+
+:-ms-input-placeholder {
+  color: #6c757d;
+}
+
+::-ms-input-placeholder {
+  color: #6c757d;
+}
+
+::placeholder {
+  color: #6c757d;
+}
+
+.container {
+  margin: 70px;
+}
+
+.container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.container .header ._1 {
+  position: relative;
+  width: 30%;
+}
+
+.container .header ._1 input {
+  padding-left: 60px;
+  width: 100%;
+}
+
+.container .header ._1 img#search {
+  width: 30px;
+  position: absolute;
+  left: 20px;
+  top: 8px;
+}
+
+.container .header ._2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .header ._2 img {
+  width: 20px;
+  margin-right: 6px;
+}
+
+.container .header ._2 button.download {
+  margin-right: 5px;
+}
+
+.container .header ._2 button.dashboard {
+  margin-left: 5px;
+}
+
+.container .header ._2 button.rank {
+  margin-right: 10px;
+}
+
+.container .content {
+  margin-top: 20px;
+  overflow: auto;
+  -webkit-box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  background-color: white;
+  width: 100%;
+  max-height: 500px;
+}
+
+.container .content table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 285%;
+  table-layout: auto;
+}
+
+.container .content table th {
+  background-color: #0d6efd;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  white-space: wrap;
+  padding: 4px 8px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.container .content table td {
+  font-size: 14px;
+  color: black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 10px;
+  max-width: 200px;
+}
+
+.container .content table td form select,
+.container .content table td form input[type='date'] {
+  background-color: #e9ecef;
+  color: black;
+}
+
+.container .content table td:hover {
+  text-overflow: clip;
+  white-space: normal;
+  word-break: keep-all;
+}
+
+.container .content table td.keterangan {
+  max-width: 300px;
+}
+
+.container .content table td.aksi div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.container .content table td.aksi div a {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  font-weight: 700;
+  margin: 4px 8px;
+}
+
+.container .content table td.aksi div a button.update,
+.container .content table td.aksi div a button.delete {
+  all: unset;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #fd7e14;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content table td.aksi div a button.update img,
+.container .content table td.aksi div a button.delete img {
+  width: 20px;
+}
+
+.container .content table td.aksi div a button.view {
+  background-color: #adb5bd;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 8px;
+}
+
+.container .content table td.aksi div a button.view img {
+  width: 25px;
+}
+
+.container .content table td.aksi div a button:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.container .content table td.aksi div a button.delete {
+  background-color: #dc3545;
+}
+
+.container .content table tr:nth-child(odd) {
+  background-color: #f3f3f3;
+}
+
+.container .content table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 992px) {
+  .container .header ._1 {
+    width: 40%;
+  }
+  .container .header ._1 input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .container .header ._1 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .header ._1 input {
+    width: 80%;
+  }
+  .container .header ._2 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .container .header ._2 button.rank {
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=styleDetailAksi.css.map */

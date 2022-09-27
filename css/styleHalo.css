@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+  background-color: #f6f6ff;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+select {
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 10px;
+  outline: none;
+  cursor: pointer;
+  width: auto;
+}
+
+input[type='date'] {
+  cursor: pointer;
+}
+
+button {
+  all: unset;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 30px;
+  padding: 16px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+input[type='text'] {
+  all: unset;
+  background-color: white;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 10px 14px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input[type='text']:focus,
+textarea:focus,
+select:focus {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: #0d6efd;
+}
+
+::-webkit-input-placeholder {
+  color: #6c757d;
+}
+
+:-ms-input-placeholder {
+  color: #6c757d;
+}
+
+::-ms-input-placeholder {
+  color: #6c757d;
+}
+
+::placeholder {
+  color: #6c757d;
+}
+
+input {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+}
+/*# sourceMappingURL=styleHalo.css.map */

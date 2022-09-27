@@ -1,0 +1,10 @@
+@mixin flex-box($horizontal: center, $vertical: center) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+@mixin onHover($valBrightness: 110%, $valScale: 1.05) {
+    filter: brightness($valBrightness);
+    transform: scale($valScale);
+}

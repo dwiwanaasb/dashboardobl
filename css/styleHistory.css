@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+  background-color: #f6f6ff;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+select {
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 10px;
+  outline: none;
+  cursor: pointer;
+  width: auto;
+}
+
+input[type='date'] {
+  cursor: pointer;
+}
+
+button {
+  all: unset;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 30px;
+  padding: 16px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+input[type='text'],
+input[type='password'],
+input[type='number'],
+input[type='date'] {
+  all: unset;
+  background-color: white;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 10px 14px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+input[type='date']:focus,
+textarea:focus,
+select:focus {
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: #0d6efd;
+}
+
+::-webkit-input-placeholder {
+  color: #6c757d;
+}
+
+:-ms-input-placeholder {
+  color: #6c757d;
+}
+
+::-ms-input-placeholder {
+  color: #6c757d;
+}
+
+::placeholder {
+  color: #6c757d;
+}
+
+.container {
+  margin: 70px;
+}
+
+.container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.container .header ._1 {
+  position: relative;
+  width: 40%;
+}
+
+.container .header ._1 input {
+  padding-left: 60px;
+  width: 80%;
+}
+
+.container .header ._1 img#search {
+  width: 30px;
+  position: absolute;
+  left: 20px;
+  top: 8px;
+}
+
+.container .header ._2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .header ._2 img {
+  width: 20px;
+  margin-right: 6px;
+}
+
+.container .header ._2 button.rank {
+  margin-right: 20px;
+}
+
+.container .header ._2 .chooseBy_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 30px;
+  width: 100%;
+}
+
+.container .header ._2 .chooseBy_1 label {
+  margin-bottom: 6px;
+}
+
+.container .header ._2 .chooseBy_1 form {
+  width: 100%;
+}
+
+.container .header ._2 .chooseBy_1 form select {
+  width: 100%;
+  background-color: #e9ecef;
+}
+
+.container .note {
+  margin: 20px 0;
+}
+
+.container .note label {
+  font-weight: 700;
+  color: red;
+}
+
+.container .content {
+  margin-top: 20px;
+  overflow: auto;
+  -webkit-box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  background-color: white;
+  width: 100%;
+  max-height: 500px;
+}
+
+.container .content table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+  table-layout: auto;
+}
+
+.container .content table th {
+  background-color: #0d6efd;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  white-space: wrap;
+  padding: 4px 8px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.container .content table td {
+  font-size: 14px;
+  color: black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 10px;
+  max-width: 200px;
+}
+
+.container .content table td.aksi div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.container .content table td.aksi div a {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  font-weight: 700;
+  margin: 4px 8px;
+}
+
+.container .content table td.aksi div a button.detailDokumen {
+  background-color: #fd7e14;
+  font-size: 14px;
+}
+
+.container .content table td.aksi div a button.view {
+  background-color: #adb5bd;
+  padding: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 8px;
+  width: 40px;
+  height: 40px;
+}
+
+.container .content table td.aksi div a button.view img {
+  width: 25px;
+}
+
+.container .content table td.aksi div .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 97;
+}
+
+.container .content table td.aksi div .overlay .cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  z-index: 98;
+}
+
+.container .content table td.aksi div .overlay .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  width: 80%;
+  position: relative;
+  border-radius: 10px;
+  z-index: 99;
+  padding: 10px;
+}
+
+.container .content table td.aksi div .overlay .container .header {
+  padding: 10px 0;
+  border-bottom: 1px solid #ced4da;
+  width: 100%;
+  white-space: normal;
+  word-break: keep-all;
+}
+
+.container .content table td.aksi div .overlay .container .header h2 {
+  font-size: 28px;
+}
+
+.container .content table td.aksi div .overlay .container .modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: auto;
+  max-height: 500px;
+}
+
+.container .content table td.aksi div .overlay .container .modal .content {
+  all: unset;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 18px;
+}
+
+.container .content table td.aksi div .overlay .container .modal .content label {
+  font-size: 14px;
+  font-weight: 600;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.container .content table td.aksi div .overlay .container .modal .content label.keterangan {
+  width: 80%;
+}
+
+.container .content table td.aksi div .overlay .container .modal .content span {
+  -webkit-box-shadow: 2px 3px 20px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 3px 20px -1px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  width: 80%;
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content table td.aksi div .overlay .container .modal .content textarea {
+  all: unset;
+  padding: 10px 20px;
+  border-radius: 24px;
+  background-color: white;
+  -webkit-box-shadow: 2px 3px 20px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 3px 20px -1px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  width: 80%;
+  min-height: 250px;
+  max-height: 500px;
+  overflow: auto;
+  white-space: normal;
+  word-break: keep-all;
+  text-align: justify;
+}
+
+.container .content table td.aksi div .overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.container .content table th:nth-child(1) {
+  width: 70px;
+}
+
+.container .content table th:nth-child(16) {
+  width: 400px;
+}
+
+.container .content table td.kegiatan {
+  width: 50%;
+  text-align: left;
+}
+
+.container .content table td:hover {
+  text-overflow: clip;
+  white-space: normal;
+  word-break: keep-all;
+}
+
+.container .content table tr:nth-child(odd) {
+  background-color: #f3f3f3;
+}
+
+.container .content table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 992px) {
+  .container .header ._1 {
+    width: 40%;
+  }
+  .container .header ._1 input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .container .header ._1 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .header ._1 input {
+    width: 80%;
+  }
+  .container .header ._2 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .container .header ._2 button.rank {
+    margin-bottom: 20px;
+  }
+  .container .content table td.aksi div .overlay .container .modal {
+    padding: 0;
+  }
+  .container .content table td.aksi div .overlay .container .modal .content {
+    width: 100%;
+  }
+  .container .content table td.aksi div .overlay .container .modal .content span {
+    white-space: normal;
+    word-break: keep-all;
+    text-align: left;
+  }
+  .container .content table td.aksi div .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  .container .content table th:nth-child(1) {
+    width: 70px;
+  }
+  .container .content table th:nth-child(16) {
+    width: 400px;
+  }
+  .container .content table td:hover {
+    text-overflow: clip;
+    white-space: normal;
+    word-break: break-all;
+  }
+  .container .content table tr:nth-child(odd) {
+    background-color: #f3f3f3;
+  }
+  .container .content table tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+}
+/*# sourceMappingURL=styleHistory.css.map */
